@@ -1,0 +1,641 @@
+@font-face {
+	font-family: 'bitterbold';
+	src: url('../font/Bitter-Bold-webfont.eot');
+	src: url('../font/Bitter-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Bitter-Bold-webfont.woff2') format('woff2'),
+		 url('../font/Bitter-Bold-webfont.woff') format('woff'),
+		 url('../font/Bitter-Bold-webfont.ttf') format('truetype'),
+		 url('../font/Bitter-Bold-webfont.svg#bitterbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'bitterregular';
+	src: url('../font/Bitter-Regular-webfont.eot');
+	src: url('../font/Bitter-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Bitter-Regular-webfont.woff2') format('woff2'),
+		 url('../font/Bitter-Regular-webfont.woff') format('woff'),
+		 url('../font/Bitter-Regular-webfont.ttf') format('truetype'),
+		 url('../font/Bitter-Regular-webfont.svg#bitterregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'lobster_1.4regular';
+	src: url('../font/Lobster 1.4-webfont.eot');
+	src: url('../font/Lobster 1.4-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Lobster 1.4-webfont.woff2') format('woff2'),
+		 url('../font/Lobster 1.4-webfont.woff') format('woff'),
+		 url('../font/Lobster 1.4-webfont.ttf') format('truetype'),
+		 url('../font/Lobster 1.4-webfont.svg#lobster_1.4regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'italiannoregular';
+	src: url('../font/italianno-regular-otf-webfont.eot');
+	src: url('../font/italianno-regular-otf-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/italianno-regular-otf-webfont.woff2') format('woff2'),
+		 url('../font/italianno-regular-otf-webfont.woff') format('woff'),
+		 url('../font/italianno-regular-otf-webfont.ttf') format('truetype'),
+		 url('../font/italianno-regular-otf-webfont.svg#italiannoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: 'bitterregular';
+	background: url('../img/fondo-guadua.jpg') repeat-x 0px 81px;
+	background-color: #141414;
+}
+.clearFix {
+	clear: both;
+}
+/* ***** Header (inicio) ***** */
+#header {
+	background: url('../img/franja-nar.png') repeat-x;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+	#header nav.menu {
+		position: relative;
+		height: 81px;
+		margin: 0 auto;
+		width: 935px;
+	}
+		#main-menu-links {
+			display: block;
+			position: absolute;
+			height: 71px;
+			top: 10px;
+			border-right: 1px solid #2A241F;
+			border-left: 1px solid #504641;
+		}
+			#main-menu-links li {
+				float: left;
+				border-right: 1px solid #504641;
+				border-left: 1px solid #2A241F;
+			}
+				#main-menu-links li a:link, #main-menu-links li a:visited {
+					display: block;
+					font-family: 'bitterregular';
+					text-decoration: none;
+					font-size: 14px;
+					color: #FFDFCA;
+					text-align: center;
+					line-height: 68px;
+					text-transform: uppercase;
+				}
+				#main-menu-links li a:hover {
+					background: url('../img/menu-hover.png') repeat-x;
+				}
+					#main-menu-links li a span {
+						display: block;
+						width: 153px;
+						height: 71px;
+						margin: 0 auto;
+						background-image: none;
+					}
+					#main-menu-links li a.active {
+						background: url('../img/menu-hover.png') repeat-x;
+					}
+					#main-menu-links li a.active span {
+						background-image: url('../img/menu-act.png');
+						background-repeat: no-repeat;
+						background-position: center 50px;
+						color: #FFFFFF;
+					}	
+/* ***** Header (fin) ***** */
+div.centrarimg {
+		position: relative;
+		width: 935px;
+		height: 255px;
+		margin: 0 auto;
+	}
+	div.centrarimg img {
+		position: absolute;
+		z-index: 10;
+	}
+		div.centrarimg img.direccion {
+			top: 172px;
+			left: 8px;
+		}
+		div.centrarimg img.logo {
+			top: 128px;
+			left: 50%;
+			margin-left: -139px;
+		}
+		div.centrarimg img.reservaciones {
+			top: 157px;
+			right: 8px;
+		}
+
+/* ***** Sección inicio (inicio) ***** */
+#vistaInicio div.centrar {
+	position: relative;
+	max-width: 935px;
+	margin: 0 auto 75px;
+}
+	#carrusel {
+		position: relative;
+		width: 100%;
+		margin: 25px auto 0;
+		background-color: #FFFFFF;
+	}
+		#carrusel div.contenedor {
+			position: relative;
+			padding: 15px;
+			margin: 0 auto;
+			width: 96.8%;
+		}
+			#carrusel div.contenedor img {
+				display: block;
+				width: 100%;
+			}
+			#carrusel a {
+				position: absolute;
+				display: block;
+				width: 65px;
+				height: 89px;
+				overflow: hidden;
+				text-indent: -9999px;
+				background-image: url('../img/flechas-carrusel.png');
+				top: 155px;
+				z-index: 110;
+			}
+			#carrusel a.ant:link, #carrusel a.ant:visited {
+				background-position: 0px 0px;
+				left: -25px;
+			}
+			#carrusel a.ant:hover {
+				background-position: -130px 0px;
+			}
+			#carrusel a.sig:link, #carrusel a.sig:visited {
+				background-position: -65px 0px;
+				right: -25px;
+			}
+			#carrusel a.sig:hover {
+				background-position: -195px 0px;
+			}
+	#vistaInicio img.lema {
+		display: block;
+		margin: 44px auto 36px;
+	}
+	#vistaInicio ul.servicios {
+		max-width: 100%;
+		margin: 0 auto 75px;
+	}
+		#vistaInicio ul.servicios li a:link,
+		#vistaInicio ul.servicios li a:visited {
+			display: block;
+			width: 32%;
+			float: left;
+			background-color: #FFFFFF;
+			margin: 0 0.6%;
+			text-decoration: none;
+		}
+		#vistaInicio ul.servicios li a:hover div {
+			background-position: 0px 0px;
+		}
+			#vistaInicio ul.servicios li a img {
+				display: block;
+				width: 94%;
+				margin: 9px auto;
+			}
+			#vistaInicio ul.servicios li a div {
+				height: 66px;
+				background-image: url('../img/fon-enlace.png') ;
+				background-position: 0px 66px;
+			}
+				ul.servicios li a div h3 {
+					font-size: 32px;
+					color: #FFFFFF;
+					font-family: 'lobster_1.4regular';
+					padding-top: 7px;
+					padding-left: 13px;
+				}
+				ul.servicios li a div h4 {
+					font-size: 12px;
+					color: #492C1D;
+					padding-top: 3px;
+					padding-left: 13px;
+					text-transform: uppercase;
+				}
+/* ***** Sección inicio (fin) ***** */
+
+
+#content {
+	background-color: #141414;
+	color: #BDA195;
+	margin-top: 78px;
+	padding-bottom: 36px;
+	width: 100%;
+}
+	#content span.sombra {
+		position: relative;
+		display: block;
+		height: 26px;
+		background: url('../img/sombra-internas.png') repeat-x;
+		left: 0;
+		top: -26px;
+	}
+	div.centrar {
+		width: 945px;
+		margin: 0 auto 0;
+		font-family: Arial, Sans-Serif;
+	}
+		div.centrar h2 {
+			color: #FFFFFF;
+			font-size: 32px;
+			border-bottom: 1px solid #FFFFFF;
+			padding-bottom: 13px;
+			font-family: "bitterregular";
+			text-transform: uppercase;
+			margin-bottom: 36px;
+		}
+		div.centrar p {
+			font-size: 14px;
+			line-height: 22px;
+			margin: 0 23px 17px 0;
+			text-align: justify;
+		}
+			div.centrar p strong {
+				color: #FF6600;
+			}
+		#content div.centrar h3 {
+			color: #FF6600;
+			height: 33px;
+			background: url('../img/plato.png') no-repeat left center;
+			padding-left: 43px;
+			line-height: 32px;
+			font-size: 22px;
+			font-family: "bitterregular";
+		}
+		div.centrar a:link,
+		div.centrar a:visited {
+			color: #FF9700;
+		}
+		div.centrar a:hover {
+			color: #FFC167;
+		}
+
+/* ***** Sección El restaurante (inicio) ***** */
+div.cuerpoRest {
+	width: 64%;
+	float: left;
+}
+	div.cuerpoRest h3 {
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+ul.fotosRest {
+	width: 34%;
+	float: right;
+}
+	ul.fotosRest li {
+		background-color: #E5E5E5;
+		padding: 4px 0px;
+		margin-bottom: 23px;
+	}
+		ul.fotosRest li a {
+			display: block;
+			position: relative;
+		}
+			ul.fotosRest li a span.lupa, div.centrar div.fotosEven a span.lupa {
+				display: none;
+				position: absolute;
+				width: 54px;
+				height: 54px;
+				left: 50%;
+				margin-left: -27px;
+				top: 64px;
+				background: url('../img/lupa-hover.png') no-repeat center center;
+			}
+			ul.fotosRest li a:hover span, div.centrar div.fotosEven a:hover span.lupa {
+				display: block;
+			}
+				ul.fotosRest li img {
+					display: block;
+					width: 97%;
+					height: 183px;
+					margin: 0 auto;
+				}
+/* ***** Sección El restaurante (fin) ***** */
+
+
+/* ***** Sección Eventos (inicio) ***** */
+div.centrar div.fotosEven {
+	width: 100%;
+}
+	div.centrar div.fotosEven a {
+		display: block;
+		position: relative;
+		width: 32%;
+		float: left;
+		margin: -13px 0px 30px 18px;
+	}
+	div.centrar div.fotosEven a:first-child {
+		margin-left: 0px;
+	}
+	div.centrar div.fotosEven a span.lupa {
+		top: 86px;
+	}
+div.cuerpoEven  div.columIzq {
+	width: 56%;
+	float: left;
+}
+	div.cuerpoEven div.columIzq h4 {
+		color: #FF6600;
+		font-family: 'Arial';
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		padding-top: 5px;
+		padding-bottom: 12px;
+	}
+	div.cuerpoEven div.columIzq ul {
+		margin-bottom: 15px;
+	}
+		div.cuerpoEven div.columIzq ul li {
+			display: inline-block;
+			background: url('../img/vineta.png') no-repeat left center;
+			padding-left: 16px;
+			width: 32%;
+			margin-right: 45px;
+			margin-bottom: 6px;
+			font-size: 14px;
+		}
+	div.cuerpoEven a:link,
+	div.cuerpoEven a:visited {
+		color: #FF9700;
+	}
+	div.cuerpoEven a:hover {
+		color: #FFC167;
+	}
+div.cuerpoEven  div.columDer {
+	width: 37%;
+	border: 1px solid #876E66;
+	float: right;
+}
+	div.cuerpoEven  div.columDer table {
+		width: 100%;
+		font-size: 12px;
+		line-height: 16px;
+	}
+	div.cuerpoEven div.columDer table tr td:first-child {
+		color: #FF6600;
+		text-align: right;
+		padding-right: 14px;
+		width: 130px;
+	}
+	div.cuerpoEven div.columDer table tr {
+		padding: 10px;
+		display: block;
+	}
+	div.cuerpoEven div.columDer table tr:first-child {
+		
+		padding-top: 20px;
+	}
+	div.cuerpoEven div.columDer table tr:last-child {
+		padding-bottom: 20px;
+	}
+	div.cuerpoEven div.columDer table ul li {
+		background: url('../img/vineta.png') no-repeat left center;
+		padding-left: 16px;
+	}
+/* ***** Sección Eventos (fin) ***** */
+
+
+/* ***** Sección contacto (inicio) ***** */
+div.contacto {
+	width: 100%;
+	margin-top: -7px;
+}
+	div.contacto div.formulario {
+		width: 56%;
+		float: left;
+	}
+		div.contacto div.formulario ul {
+			font-size: 14px;
+			color: #FF6600;
+			margin-bottom: 28px;
+		}
+			div.contacto div.formulario ul li {
+				margin-bottom: 8px;
+				font-family: "bitterregular";
+			}
+		div.contacto div.formulario label {
+			display: inline-block;
+			width: 65px;
+			color: #EFCCC2;
+			font-size: 14px;
+			font-family: 'Arial';
+			font-weight: bold;
+			font-style: normal;
+			text-align: right;
+			vertical-align: top;
+			padding-right: 8px;
+			line-height: 22px;
+		}
+		div.contacto div.formulario input, div.contacto div.formulario textarea {
+			width: 83%;
+			height: 19px;
+			background-color: #35241F;
+			border: 1px solid #BDA195;
+			padding: 0 2px;
+			color: #FFFFFF;
+			font-size: 14px;
+			font-family: 'Arial';
+		}
+		div.contacto div.formulario textarea {
+			height: 181px;
+			width: 100%;
+			resize: none;
+		}
+		div.contacto div.formulario  div.form-textarea-wrapper {
+			display: inline-block;
+			width: 84%;
+		}
+		div.contacto div.formulario div.grippie {
+			display: none;
+		}
+		div.contacto div.formulario input[type="submit"] {
+			float: right;
+			width: 104px;
+			height: 43px;
+			font-family: 'bitterregular';
+			color: #FFFFFF;
+			font-size: 14px;
+			background: url('../img/bt-enviar.png') repeat-x;
+			border: none;
+			cursor: pointer;
+			margin-right: 4px;
+		}
+		div.contacto div.formulario input[type="submit"]:hover {
+			background: url('../img/bt-enviarHover.png') repeat-x;
+		}
+		div.contacto div.formulario div.form-item {
+			margin: 18px 0;
+		}
+		div.contacto div.formulario div.webform-component--con-nombre {
+			margin-top: 23px;
+		}
+		div.contacto div.formulario div.webform-component--con-datos {
+			margin-top: 0;
+		}
+	div.contacto div.ubicacion {
+		width: 35%;
+		border: 1px solid #876E66;
+		padding: 20px;
+		float: right;
+	}
+		#content div.centrar div.contacto div.ubicacion h3 {
+			background: none;
+			color: #FF6600;
+			font-family: "bitterregular";
+			font-size: 22px;
+			padding-bottom: 25px;
+			padding-left: 0;
+			height: auto;
+			line-height: 22px;
+		}
+		#mapa {
+			width: 100%;
+			height: 330px;
+			margin: 0 auto;
+			border: 1px solid #83817E;
+		}
+		.leaflet-control-scale-line, .leaflet-control-attribution, .gmnoprint {
+			display: none;
+		}
+		.leaflet-popup-content {
+			margin: 8px;
+		}
+		div.leaflet-popup-content {
+			width: 140px;
+		}
+		a.leaflet-control-layers-toggle {
+			display: none;
+		}
+		img.logoMar {
+			display: block;
+		}
+		div.contacto div.ubicacion span {
+			font-family: 'Arial';
+			font-style: italic;
+			font-size: 12px;
+		}
+/* ***** Sección contacto (fin) ***** */
+
+
+/* ***** Sección menú (inicio) ***** */
+#content div.centrar div.menu h3 {
+    background: none;
+    color: #FFCE00;
+    font-size: 55px;
+    padding-left: 0;
+    padding-bottom: 6px;
+    margin-bottom: 24px;
+    font-family: 'italiannoregular';
+    border-bottom: 1px solid #FFCE00;
+}
+    div.centrar div.menu ul {
+        display: inline-block;
+        width: 100%;
+        text-align: justify;
+    }
+        div.centrar div.menu ul li {
+            display: inline-flex;
+            margin-bottom: 29px;
+        }
+            div.centrar div.menu ul li a {
+                display: block;
+                position: relative;
+                width: 109px;
+                text-decoration: none;
+            }
+            div.centrar div.menu ul li a:hover {
+                background: #FFFFFF;
+                width: 119px;
+            }
+            div.centrar div.menu ul li a h4 {
+                font-family: 'bitterregular';
+                color: #FFFFFF;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                margin-top: 6px;
+            }
+            div.centrar div.menu ul li a span {
+                display: none;
+                position: absolute;
+                width: 54px;
+                height: 54px;
+                left: 50%;
+                margin-left: -27px;
+                top: 32px;
+                background: url('../img/lupa-hover.png') no-repeat center center;
+            }
+            div.centrar div.menu ul li a:hover span {
+                display: block;
+            }
+            div.centrar div.menu ul li a:hover img {
+                display: block;
+                margin: 5px auto 0;
+            }
+/* ***** Sección menú (fin) ***** */
+
+
+/* ***** Footer (inicio) ***** */
+#footer {
+	height: 94px;
+	background-color: #1E1917;
+}
+	#footer div.centrar {
+		position: relative;
+		width: 935px;
+		margin: 0 auto;
+	}
+		#footer div.centrar p {
+			font-size: 12px;
+			color: #D3BFB6;
+			padding-top: 26px;
+			font-family: "bitterregular";
+		}
+			#footer div.centrar p span {
+				color: #FF7900;
+			}
+		#redesSociales {
+			position: absolute;
+			right: 0;
+			top: 31px;
+		}
+			#redesSociales li {
+				float: left;
+				margin-left: 9px;
+			}
+				#redesSociales li a {
+					display: block;
+					width: 31px;
+					height: 31px;
+					text-indent: -9999px;
+					overflow: hidden;
+					background-image: url('../img/redes.png');
+				}
+			#redesSociales li.correo {
+			}
+				#redesSociales li.correo a:link, #redesSociales li.correo a:visited {
+					background-position: 31px 0px;
+				}
+				#redesSociales li.correo a:hover {
+					background-position: 31px 31px;
+				}
+			#redesSociales li.facebook {
+			}
+				#redesSociales li.facebook a:link, #redesSociales li.facebook a:visited {
+					background-position: 0px 0px;
+				}
+				#redesSociales li.facebook a:hover {
+					background-position: 0px 31px;
+				}
+/* ***** Footer (fin) ***** */

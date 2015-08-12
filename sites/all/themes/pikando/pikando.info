@@ -1,0 +1,15 @@
+name = Pikando
+description = Tema gráfico del restaurenta Pikando parrilla y fogón.
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/genericos.css
+stylesheets[all][] = lib/leaflet/leaflet.css
+stylesheets[all][] = css/estilos.css
+
+scripts[] = lib/cycle2/cycle2.js
+scripts[] = lib/leaflet/leaflet.js
+scripts[] = lib/leaflet-plugins-master/layer/tile/Google.js
+scripts[] = js/pikando.js
+
+regions[content] = Content

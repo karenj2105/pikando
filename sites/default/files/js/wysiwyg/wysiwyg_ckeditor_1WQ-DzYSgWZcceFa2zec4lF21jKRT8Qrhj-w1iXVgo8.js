@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/pikando/sites/all/libraries/ckeditor/';
