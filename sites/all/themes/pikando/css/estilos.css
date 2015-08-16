@@ -530,7 +530,8 @@ div.contacto {
 
 /* ***** Sección menú (inicio) ***** */
 #content div.centrar div.menu h3 {
-    background: none;
+    width: 99%;
+	background: none;
     color: #FFCE00;
     font-size: 55px;
     padding-left: 0;
@@ -541,49 +542,134 @@ div.contacto {
 }
     div.centrar div.menu ul {
         display: inline-block;
-        width: 100%;
-        text-align: justify;
+        width: 99%;
+        text-align: left;
+		padding-bottom: 45px;
     }
         div.centrar div.menu ul li {
+			position: relative;
             display: inline-flex;
-            margin-bottom: 29px;
+			width: 109px;
+			min-height: 158px;
+            margin: 0 2px 17px;
         }
             div.centrar div.menu ul li a {
                 display: block;
-                position: relative;
-                width: 109px;
-                text-decoration: none;
+                position: absolute;
+				width: 109px;
+				height: 157px;
+				text-decoration: none;
+				padding: 0;
+				background-color: #FFF;
             }
-            div.centrar div.menu ul li a:hover {
-                background: #FFFFFF;
-                width: 119px;
-            }
-            div.centrar div.menu ul li a h4 {
-                font-family: 'bitterregular';
+            div.centrar div.menu ul li h4 {
+                width: 100%;
+				height: 50px;
+				position: absolute;
+				bottom: 0;
+				font-family: 'bitterregular';
                 color: #FFFFFF;
                 font-size: 14px;
                 line-height: 17px;
                 text-align: center;
-                margin-top: 6px;
+				z-index: 110;
+				background-color: #141414;
             }
-            div.centrar div.menu ul li a span {
+				div.centrar div.menu ul li h4 span {
+					display: block;
+					padding: 6px 4px;
+				}
+            div.centrar div.menu ul li a .lupa {
                 display: none;
                 position: absolute;
                 width: 54px;
                 height: 54px;
                 left: 50%;
                 margin-left: -27px;
-                top: 32px;
+                top: 19px;
                 background: url('../img/lupa-hover.png') no-repeat center center;
+				z-index: 150;
             }
-            div.centrar div.menu ul li a:hover span {
-                display: block;
-            }
-            div.centrar div.menu ul li a:hover img {
-                display: block;
-                margin: 5px auto 0;
-            }
+				div.centrar div.menu ul li a img {
+					display: block;
+					width: 100%;
+					height: auto;
+					border: 0px solid #FFF;
+					box-sizing: border-box;
+				}
+				div.centrar div.menu ul li:hover a span {
+					display: block;
+				}
 /* ***** Sección menú (fin) ***** */
+
+#cboxClose {
+	top: 3px;
+}
+#cboxContent, #cboxLoadedContent {
+	border-radius: 15px;
+}
+#cboxNext {
+	right: 3px;
+}
+#cboxPrevious {
+	left: 4px;
+}
+/* ***** Sección plato(inicio) ***** */
+#cboxLoadedContent {
+}
+div.plato {
+	margin: 25px 0px 25px 20px;
+}
+	div.plato div {
+		float: left;
+	}
+		div.plato div.imagenes {
+			position: relative;
+			width: 470px;
+			margin-right: 30px;
+		}
+		div.plato div.datos {
+			width: 260px;
+			font-family: 'bitterregular';
+		}
+			div.plato div.datos h3 {
+				color: #000;
+				font-size: 22px;
+				line-height: 26px;
+				font-family: 'bitterbold';
+				border-bottom: 1px solid;
+				padding-bottom: 9px;
+				margin-bottom: 17px;
+				margin-top: 16px;
+			}
+			div.plato div.datos p {
+				color: #494949;
+				font-size: 16px;
+				line-height: 19px;
+			}
+			div.plato div.field-name-field-pla-categoria {
+				width: 100%;
+				color: #494949 ;
+				font-size: 14px;
+				border-top: 1px solid;
+				margin-top: 21px;
+				padding-top: 15px;
+			}
+				div.plato  .field .field-label {
+					font-weight: normal;
+				}
+		div.imagenes div.field-name-field-pla-imagen {
+			width: 470px;
+			height: 352px;
+			padding: 0px;
+		}
+			div.imagenes div.field-name-field-pla-imagen div.field-items,
+			div.imagenes div.field-name-field-pla-imagen div.field-items div {
+				width: 470px;
+				height: 352px;
+				overflow: hidden;
+			}
+/* ***** Sección plato (fin) ***** */
 
 
 /* ***** Footer (inicio) ***** */

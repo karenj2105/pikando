@@ -25,8 +25,8 @@
 		<script type="text/javascript">
 			(function ($) {
 				$(document).ready(function() {
-				establecerMapa();
-			});
+					establecerMapa();
+				});
 			})(jQuery);
 		</script>
 		<div id="mapa"></div>

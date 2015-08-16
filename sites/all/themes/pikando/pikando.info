@@ -8,8 +8,11 @@ stylesheets[all][] = lib/leaflet/leaflet.css
 stylesheets[all][] = css/estilos.css
 
 scripts[] = lib/cycle2/cycle2.js
+scripts[] = lib/caroufredsel/caroufredsel.js
 scripts[] = lib/leaflet/leaflet.js
+scripts[] = lib/animate-colors/jquery.animate-colors-min.js
 scripts[] = lib/leaflet-plugins-master/layer/tile/Google.js
+
 scripts[] = js/pikando.js
 
 regions[content] = Content
