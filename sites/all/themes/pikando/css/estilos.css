@@ -608,6 +608,7 @@ div.contacto {
 
 #cboxClose {
 	top: 3px;
+	z-index: 200;
 }
 #cboxContent, #cboxLoadedContent {
 	border-radius: 15px;
@@ -637,8 +638,6 @@ div.plato {
 			position: absolute;
 			bottom: 0;
 			font-family: 'bitterregular';
-			background-color: #FFF;
-			opacity: 0.7;
 			z-index: 200;
 			padding: 12px;
 		}
@@ -649,6 +648,7 @@ div.plato {
 				font-family: 'bitterbold';
 				border-bottom: 1px solid;
 				margin-bottom: 10px;
+				text-shadow: 0 3px #FFF, 3px 0 3px #FFF;
 			}
 			#content div.centrar div.plato div.datos h3 {
 				background: none;
@@ -659,6 +659,8 @@ div.plato {
 				font-size: 16px;
 				line-height: 19px;
 				margin: 0;
+				display: inline;
+				background-color: #FFF;
 			}
 			div.plato .field-name-field-pla-descripcion {
 
