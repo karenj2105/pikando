@@ -10,7 +10,9 @@
 			next: ('a.sig'),
 			prev: ('a.ant')
 		});
-
+		$("div.centrar div.menu ul li h4").click(function(){
+			$(this).siblings("a").click();
+		});
 		$("div.centrar div.menu ul li").mouseover(function(){
 			$(this).children("a").css("z-index", 120);
 			$(this).children("a").css("box-shadow", "0 0 20px #000");
@@ -69,5 +71,5 @@ function establecerMapa() {
 	mapa.addLayer(gglr);
 
 	var marker = L.marker([2.517096, -76.543774]).addTo(mapa);
-	marker.bindPopup("<img class='logoMar' src='http://localhost/pikando/sites/all/themes/pikando/img/pikando-fondo-blanco.png'' alt='Pikando' />").openPopup();
+	marker.bindPopup("<span class='logoMar'></span>").openPopup();
 }

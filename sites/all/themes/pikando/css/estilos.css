@@ -55,7 +55,7 @@ body {
 	background: url('../img/franja-nar.png') repeat-x;
 	position: fixed;
 	width: 100%;
-	z-index: 1000;
+	z-index: 150;
 }
 	#header nav.menu {
 		position: relative;
@@ -517,8 +517,11 @@ div.contacto {
 		a.leaflet-control-layers-toggle {
 			display: none;
 		}
-		img.logoMar {
+		span.logoMar {
 			display: block;
+			width: 140px;
+			height: 25px;
+			background: url('../img/pikando-fondo-blanco.png') no-repeat center center;
 		}
 		div.contacto div.ubicacion span {
 			font-family: 'Arial';
@@ -574,6 +577,7 @@ div.contacto {
                 text-align: center;
 				z-index: 110;
 				background-color: #141414;
+				cursor: pointer;
             }
 				div.centrar div.menu ul li h4 span {
 					display: block;
@@ -615,22 +619,28 @@ div.contacto {
 	left: 4px;
 }
 /* ***** Sección plato(inicio) ***** */
-#cboxLoadedContent {
-}
 div.plato {
-	margin: 25px 0px 25px 20px;
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
 }
-	div.plato div {
-		float: left;
+	div.plato div.imagenes, div.plato div.datos {
+		position: relative;
 	}
 		div.plato div.imagenes {
 			position: relative;
-			width: 470px;
-			margin-right: 30px;
+			width: 800px;
+			background-color: #FFF;
 		}
 		div.plato div.datos {
-			width: 260px;
+			width: 97%;
+			position: absolute;
+			bottom: 0;
 			font-family: 'bitterregular';
+			background-color: #FFF;
+			opacity: 0.7;
+			z-index: 200;
+			padding: 12px;
 		}
 			div.plato div.datos h3 {
 				color: #000;
@@ -638,35 +648,30 @@ div.plato {
 				line-height: 26px;
 				font-family: 'bitterbold';
 				border-bottom: 1px solid;
-				padding-bottom: 9px;
-				margin-bottom: 17px;
-				margin-top: 16px;
+				margin-bottom: 10px;
+			}
+			#content div.centrar div.plato div.datos h3 {
+				background: none;
+				padding-left: 0;
 			}
 			div.plato div.datos p {
 				color: #494949;
 				font-size: 16px;
 				line-height: 19px;
+				margin: 0;
 			}
-			div.plato div.field-name-field-pla-categoria {
-				width: 100%;
-				color: #494949 ;
-				font-size: 14px;
-				border-top: 1px solid;
-				margin-top: 21px;
-				padding-top: 15px;
+			div.plato .field-name-field-pla-descripcion {
+
 			}
-				div.plato  .field .field-label {
-					font-weight: normal;
-				}
 		div.imagenes div.field-name-field-pla-imagen {
-			width: 470px;
-			height: 352px;
+			width: 800px;
+			height: 600px;
 			padding: 0px;
 		}
 			div.imagenes div.field-name-field-pla-imagen div.field-items,
 			div.imagenes div.field-name-field-pla-imagen div.field-items div {
-				width: 470px;
-				height: 352px;
+				width: 800px;
+				height: 600px;
 				overflow: hidden;
 			}
 /* ***** Sección plato (fin) ***** */

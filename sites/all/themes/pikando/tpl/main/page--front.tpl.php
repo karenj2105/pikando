@@ -25,7 +25,7 @@
 					$titulo = $n->title;
 					$subtitulo = $n->field_ser_subtitulo['und'][0]['value'];
 					$imagen = $n->field_ser_imagen['und'][0]['uri'];
-					$enlace = "";
+					$enlace = $n->field_ser_enlace['und'][0]['value'];
 				?>
 				<a href="<?php print $enlace; ?>">
 					<img src="<?php print file_create_url($imagen); ?>" alt="Nuestro menú"/>
@@ -57,7 +57,7 @@
 					$titulo = $n->title;
 					$subtitulo = $n->field_ser_subtitulo['und'][0]['value'];
 					$imagen = $n->field_ser_imagen['und'][0]['uri'];
-					$enlace = "";
+					$enlace = $n->field_ser_enlace['und'][0]['value'];
 				?>
 				<a href="<?php print $enlace; ?>">
 					<img src="<?php print file_create_url($imagen); ?>" alt="Eventos"/>
