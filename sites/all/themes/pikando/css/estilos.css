@@ -619,6 +619,8 @@ div.contacto {
 #cboxPrevious {
 	left: 4px;
 }
+
+
 /* ***** Sección plato(inicio) ***** */
 div.plato {
 	position: relative;
@@ -677,6 +679,87 @@ div.plato {
 				overflow: hidden;
 			}
 /* ***** Sección plato (fin) ***** */
+
+
+/* ***** Sección reservas (inicio) ***** */
+#webform-client-form-89 {
+
+}
+	#webform-client-form-89 fieldset {
+		background: #222 none repeat scroll 0 0;
+		border-radius: 4px;
+		color: #eec170;
+		display: block;
+		margin-top: 65px;
+		padding: 3px 19px;
+		position: relative;
+	}
+	#webform-client-form-89 label {
+		display: inline-block;
+		font-family: "bitterregular";
+		margin-right: 5px;
+	}
+	#webform-client-form-89 .webform-component--datos-contacto label,
+	#webform-client-form-89 .webform-component--datos-evento label{
+		text-align: right;
+		width: 200px;
+	}
+	#webform-client-form-89  legend {
+		left: 0;
+		position: absolute;
+		top: -35px;
+	}
+		#webform-client-form-89 fieldset legend span {
+			color: #fff;
+			font-family: "bitterregular";
+			font-size: 24px;
+		}
+	#webform-client-form-89 .form-text, #webform-client-form-89 .form-select,
+	#webform-client-form-89 .form-textarea {
+		background: #ddd none repeat scroll 0 0;
+		border: 1px solid;
+		border-radius: 5px;
+		height: 24px;
+	}
+	#webform-client-form-89 .form-text {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	#webform-client-form-89 .form-select {
+		height: 28px;
+	}
+	#webform-client-form-89 .webform-component-textarea label {
+		width: 120px;
+		color: #eec170;
+	}
+	#webform-client-form-89 .form-textarea {
+		height: 200px;
+		resize: none;
+		padding: 0 4px;
+	}
+	#webform-client-form-89 .grippie {
+		display: none;
+	}
+	#webform-client-form-89 input.form-checkbox, #webform-client-form-89 input.form-radio {
+		vertical-align: baseline;
+	}
+	.webform-component--su-menu--acom-plato label {
+		color: #fff;
+		font-size: 18px;
+	}
+	#webform-client-form-89 .form-checkboxes label {
+		color: #eec170;
+		font-size: 16px;
+		margin-left: 0;
+	}
+	#edit-submitted-su-menu-acom-plato {
+		border-bottom: 1px solid #fff;
+	}
+	#edit-submitted-su-menu-acom-plato .form-type-checkbox {
+		width: 45%;
+		display: inline-block;
+	}
+	/* ***** Sección reservas (inicio) ***** */
 
 
 /* ***** Footer (inicio) ***** */
